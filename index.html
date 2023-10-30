@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sakthivel - portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+           header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; 
+           }
+
+           .header-content h1 {
+               font-size: 2.5rem;
+           }
+
+           
+           .profile-picture {
+            width: 100px; 
+            height: 110px;
+            border-radius: 75%; 
+            object-fit: contain; 
+            position: absolute; 
+            top: 55px; 
+            left: 75px; 
+           }
+
+           nav {
+                background-color: #333;
+                color:#fff;
+                text-align: center;
+           }
+
+           nav ul {
+            list-style-type: none;
+            padding: 0;
+           }
+
+           nav ul li {
+            display: inline;
+            margin: 0 20px;
+           }
+
+           nav ul li a {
+            text-decoration: none;
+            color:#fff;
+           }
+ 
+           .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0.1);
+        }
+
+        .download-button {
+            background-color: #333;
+            color:#fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .downlode-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+                }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+        <img src="vel.jpg" alt="My pic" class="profile-picture">
+        <h1>T Sakthivel</h1>
+        <p>Friends Forever</p>
+        </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#educaton">Education</a><li>
+        <li><a href="#skills">Skills</a><li>
+        <li><a href="#resume">Resume</a></li>
+    </ul>
+</nav>
+    
+<section id="about">
+    <div class="section-content">
+        <h2>About Me</h2>
+        <p>Hello everyone! This is Sakthivel i am Computer Science student.</p>
+        </div>
+    </section>
+
+<section id="Education">
+    <div class="section-content">
+        <h2>Education</h2>
+        <p>B.Sc Computer Science</p>
+        <p>Bharathidasan university</p>
+        </div>
+        </section>
+    
+<section id="Skills">
+    <div class="section-content">
+        <h2>Skills</h2>
+        <ul>
+            <li>Typewriting</li>
+            <li>Photo Editing</li>
+            <li>Video Editing</li>
+            <li>Deep Learning</li>
+        </ul>
+    </div>
+</section>
+
+<section id="Resume">
+   <center>
+    <div class="section-content">
+        <h2>Resume</h2>
+        <a href="MyResume.pdf.pdf"class="download-button">My RESUME</a>
+    </div>
+   </center>
+</section>
+
+ <footer>
+        <p>&copy; 2023 Sakthivel S</p>
+ </footer>
+
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', Function(e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElemnt.offsetTop,
+                            behavior:'smooth'
+                        });
+                    }
+                });
+            });
+            </script>
+            </body>
+            </html>
+
+
+            
+
+     
